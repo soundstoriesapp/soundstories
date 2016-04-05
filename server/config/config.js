@@ -16,7 +16,7 @@ var defaults = {
 /**
  * Expose
  */
-
+console.log(process.env.NODE_ENV)
 module.exports = {
   development: extend(development, defaults),
   production: extend(production, defaults)

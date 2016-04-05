@@ -1,7 +1,7 @@
 var fs = require('fs');
 var express = require('express');
 var passport = require('passport');
-var config = require('server/config/config');
+var config = require('./server/config/config');
 var mongoose = require('mongoose');
 var app = express();
 
@@ -9,10 +9,9 @@ var server = require('http').Server(app);
 
 
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 5001));
 
 
-console.log(config);
 //Connect to mongodb
 
 var connect = function () {
