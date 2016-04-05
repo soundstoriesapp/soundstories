@@ -44,6 +44,10 @@ module.exports = function (app, passport) {
   app.use(serveStatic(config.root + '/public'));
 	//app.use(express.static(__dirname + '/public'));
   // Use winston on production
+  
+
+  
+  
   var log;
   if (env !== 'development') {
     log = {

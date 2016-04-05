@@ -4,7 +4,7 @@ var passport = require('passport');
 var config = require('./server/config/config');
 var mongoose = require('mongoose');
 var app = express();
-
+var expressHbs = require('express-handlebars');
 var server = require('http').Server(app);
 
 
@@ -38,6 +38,9 @@ require('./server/config/passport')(passport, config);
 // Bootstrap application settings
 require('./server/config/express')(app, passport);
 
+
+app.engine('hbs', expressHbs({extname:'hbs', defaultLayout:'maintemplate.hbs'}));
+app.set('view engine', 'hbs');
 // Bootstrap routes
 require('./server/config/routes')(app, passport);
 

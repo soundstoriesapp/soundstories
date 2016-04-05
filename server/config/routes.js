@@ -12,7 +12,11 @@
 module.exports = function (app, passport) {
 	require('../controllers/homecontroller')(app, passport);
 	
- 
+	require('../controllers/testcontroller')(app, passport);
+   require('../controllers/usercontroller')(app, passport);
+   require('../controllers/storycontroller')(app, passport);
+   require('../controllers/mp3controller')(app, passport);
+   require('../controllers/adminusercontroller')(app, passport);
  
   /**
    * Error handling
