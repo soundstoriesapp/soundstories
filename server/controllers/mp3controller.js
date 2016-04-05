@@ -5,7 +5,7 @@
  
 
 var mongoose = require('mongoose'),
-_ = require('underscore'),
+_ = require('lodash'),
 fs = require('fs'),
 http = require('http'),
 url = require('url'),

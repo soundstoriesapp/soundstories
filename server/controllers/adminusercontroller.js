@@ -7,7 +7,7 @@
 var mongoose = require('mongoose'),
 User = mongoose.model('User'),
 Story = mongoose.model('Story'),
-_ = require('underscore'),
+_ = require('lodash'),
 auth = require('../config/authorization'),
 validator = require('validator');
 /**

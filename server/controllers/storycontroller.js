@@ -5,7 +5,7 @@
 
 
 var mongoose = require('mongoose'),
-_ = require('underscore'),
+_ = require('lodash'),
 auth = require('../config/authorization'),
 Story = mongoose.model('Story'),
 C = require("../common");
