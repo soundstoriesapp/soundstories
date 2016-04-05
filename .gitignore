@@ -1,0 +1,12 @@
+node_modules
+.project
+public/dist/app
+public/dist/css
+public/dist/canjs-commons
+public/dist/socket.io.js
+public/bower_components
+public/canjs
+reports
+.DS_Store
+.env
+/selenium-debug.log
