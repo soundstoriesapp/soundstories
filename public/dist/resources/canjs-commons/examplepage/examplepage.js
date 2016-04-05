@@ -1,0 +1,1 @@
+define(["mtemplate!canjs-commons/examplepage/examplepage.html","canjs-commons/basecontroller"],function(e,n){n.extend("Page.Itempage",{},{template:e,getData:function(){return{}},preRender:function(e){},postRender:function(e){}})});
