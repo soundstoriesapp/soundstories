@@ -1,0 +1,31 @@
+
+
+<h2>Användare</h2>
+
+
+<div class="content-block">
+	<table>
+		<thead>
+	<tr>
+		<th>Email</th>
+		<th>Signup Datum</th>
+	</tr>
+	</thead>
+	<tbody>
+	{{#each users}}
+	<tr>
+		
+		<td>
+			{{email}}
+		</td>
+		<td>
+			{{date createdDate}}
+		</td>
+		
+	</tr>
+	{{/each}}
+	</tbody>
+	</table>
+	
+	
+</div>

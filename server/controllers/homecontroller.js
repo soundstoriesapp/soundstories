@@ -95,13 +95,15 @@ module.exports = function (app, passport) {
 			data.windowlogger = true;
 		}
 		
-		//var starthtml = render(data);
+		var starthtml = render(data);
 		
+		return res.send(starthtml);
+		
+		/*
 		return res.render('views/home', {
                 
             });
-		
-		//return res.send(starthtml);
+		*/
 	});
 	
 };

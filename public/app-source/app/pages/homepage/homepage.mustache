@@ -1,0 +1,64 @@
+
+
+
+<h2>Senaste</h2>
+
+<div class="list-block media-list issue-list story-list" storytype="latest">
+	
+	<ul>
+	{{#each model.latest}}
+		{{{partial "item"}}}
+	{{/each}}
+	</ul>
+
+	<div class="locate-right">
+		<a class="button small right button-fill" id="navigate-to-more">Se fler</a>
+	</div>
+</div>
+
+
+<h2>Gratis</h2>
+
+<div class="list-block media-list issue-list story-list" storytype="free">
+	
+	<ul>
+	{{#each model.free}}
+		{{{partial "item"}}}
+	{{/each}}
+	</ul>
+
+	<div class="locate-right">
+		<a class="button small right button-fill" id="navigate-to-more">Se fler</a>
+	</div>
+</div>
+
+
+<h2>Kategorier</h2>
+<div class="list-block media-list issue-list story-list">
+
+	<ul>
+		
+		{{#each categories}}
+		
+		<li class="category" {{data 'model'}}>
+			<div class="item-content">
+				<div class="item-inner">
+					<div class="item-title-row">
+						<div class="item-title title">{{name}}</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		
+		{{/each}}
+	</ul>
+</div>
+
+
+
+<div class="content-block inset" id="my-material-box">
+	<div class="content-block-inner">
+		<p class="title">Mitt material</p>
+		<p class="">Ladda upp din egen berättelse och få den publicerad!</p>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+<div>
+
+<div class="content-block">
+	<h1>{{story.title}}</h1>
+	<div class="description">{{story.description}}</div>
+</div>
+
+
+
+		<div id="jp-container" class="jp-audio" state="{{story.state}}">
+			<div class="jp-type-single">
+				<div class="jp-gui jp-interface">
+					<div class="jp-controls" >
+						<a href="javascript:;" class="jp-play jp-mainbutton" tabindex="1"><span class="ss-icon ss-standard">&#x25B6;</span></a>
+						<a href="javascript:;" class="jp-pause jp-mainbutton" tabindex="1"><span class="ss-icon ss-standard">&#xE8A0;</span></a>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+			
+			{{#if story.progress}}
+			
+			<div class="content-block">
+				<div class="input-slider">
+					<input type="range" min="0" max="100" step="1" can-value="story.progressPercent">
+				</div>	
+			</div>
+			{{/if}}
+			
+		</div>
+
+
+
+
+</div>

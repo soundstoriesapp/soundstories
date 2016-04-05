@@ -1,0 +1,51 @@
+
+
+<div class="statusbar-overlay"></div>
+
+<div class="panel-overlay"></div>
+<div class="appmenu-overlay open"></div>
+<div class="appmenu"></div>
+
+
+<div class="views tabs ">
+	
+	<div class="view view-main" >
+		<div class="navbar">
+			<div class="siteheader">
+				<span class="logo">Soundwave</span>
+			</div>
+			<div class="playerinfo-container">
+			<div class="playerinfo">
+				{{#if player.story}}
+				<div class="box">
+					<span class="title">{{player.story.title}}</span>
+					<span class="time">{{player.story.progress}}</span> 
+				</div>
+				{{/if}}
+			</div>
+			</div>
+		</div>
+		<div class="pages navbar-through ">
+			
+		</div>
+	</div>
+</div>
+
+<div class="popup" style="display: none;">
+	<div class="view ">
+		
+		<div class="navbar">
+			
+			
+		</div>
+		<div class="pages navbar-through toolbar-through">
+			
+		</div>	
+	</div>
+</div>
+
+<div id="jplayer"></div>
+
+<audio class="audioplayer">
+	
+</audio>

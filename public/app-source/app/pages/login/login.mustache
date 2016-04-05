@@ -1,0 +1,62 @@
+
+
+
+
+{{#if profile.loggedIn}}
+<div class="content-block-title">Inloggad</div>
+<div class="list-block">
+	
+	<div class="content-block">
+	<div class="row">
+		<div class="col-50"><a href="#" id="cancel" class="button cancel button-big">Avbryt</a></div>
+		<div class="col-50"><a href="#" id="logout" class="button save button-big active">Logout</a></div>
+	</div>
+	</div>
+</div>
+{{else}}
+<div class="content-block-title">{{message}}</div>
+<div class="list-block">
+	<ul>
+
+
+		<li>
+			<div class="item-content">
+				<div class="item-inner">
+					<div class="item-title label">Email</div>
+					<div class="item-input">
+						
+						<input type="email" can-value="profile.email" autocapitalize="off">
+			
+					</div>
+				</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="item-content">
+				<div class="item-inner">
+					<div class="item-title label">Lösenord</div>
+					<div class="item-input">
+						
+						<input type="password" can-value="profile.password">
+			
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<div class="content-block">
+		<div class="row">
+			<div class="col-50"><a href="#" id="cancel" class="button cancel button-big">Avbryt</a></div>
+			<div class="col-50"><a href="#" id="login" class="button save button-big active">Login</a></div>
+		</div>
+		
+	</div>
+	<div class="content-block">
+		<a href="#" id="to-signup" style="float: right;">Signup</a>
+	</div>
+</div>
+{{/if}}
+
+
+

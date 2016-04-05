@@ -1,0 +1,130 @@
+
+<div class="locate-right">
+	<a class="button small right" id="delete">Radera</a>
+</div>
+
+	
+
+<div class="list-block">
+
+	<ul>
+		<li>
+			<div class="item-content">
+				<div class="item-inner">
+					<div class="item-title label">Skapad av</div>
+					<div class="item-input">{{story.createdByEmail}}
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="item-content">
+				<div class="item-inner">
+					<div class="item-title label">Titel</div>
+					<div class="item-input">
+						<input type="text" can-value="story.title" placeholder="Titel">
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="align-top">
+	      <div class="item-content">
+	        <div class="item-inner">
+	          <div class="item-title label">Beskrivning</div>
+	          <div class="item-input">
+	            <textarea can-value="story.description"></textarea>
+	          </div>
+	        </div>
+	      </div>
+	    </li>
+		
+		<li class="align-top">
+	      <div class="item-content">
+	        <div class="item-inner">
+	          <div class="item-title label">Text</div>
+	          <div class="item-input">
+	            <textarea can-value="story.text"></textarea>
+	          </div>
+	        </div>
+	      </div>
+	    </li>
+		{{#if profile.admin}}
+		<li>
+			<div class="item-content">
+				<div class="item-inner">
+					<div class="item-title label">MP3</div>
+					<div class="item-input">
+						<input type="text" id="mp3-filename" can-value="story.mp3file" placeholder="MP3-fil">
+						<input type="file" id="fileinput" style="display: none;">
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="item-content">
+				<div class="item-inner">
+					<div class="item-title label">Publicerad</div>
+					<div class="item-input">
+						<input type="date" placeholder="Datum" can-value="story.publishedString" >
+					</div>
+				</div>
+			</div>
+		</li>
+		
+		
+		 
+		<li>
+			<div class="item-content">
+				<div class="item-inner">
+					<div class="item-title label">Aktiv</div>
+					<div class="item-input">
+						<label class="label-switch"> <input type="checkbox" can-value="story.active">
+							<div class="checkbox"></div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="item-content">
+				<div class="item-inner">
+					<div class="item-title label">Gratis</div>
+					<div class="item-input">
+						<label class="label-switch"> <input type="checkbox" can-value="story.free">
+							<div class="checkbox"></div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label">Kategori</div>
+                <div class="item-input">
+                  
+                  <select can-value="story.categoryId">
+					{{#each categories}}
+					<option value="{{id}}">{{name}}</option>
+					{{/each}}
+					
+					</select>
+                </div>
+              </div>
+            </div>
+          </li>
+          {{/if}}
+	</ul>
+	<div class="content-block">
+		<div class="row">
+			<div class="col-50"><a href="#" id="cancel" class="button button-big">Avbryt</a></div>
+			<div class="col-50"><a href="#" id="save" class="button button-big button-fill">Spara</a></div>
+
+		</div>
+		<div class="row">
+		
+			<div class="col-50"></div>
+
+		</div>
+	</div>
+</div>
