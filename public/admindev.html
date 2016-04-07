@@ -4,25 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Issue Tracker</title>
-    
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <!-- Path to your custom app styles-->
     <link href="css/main.css" media="all" rel="stylesheet" type="text/css" />
-    
     <link rel="stylesheet" type="text/css" href="resources/symbolset/ss-standard.css"> 
-    </head>
     
-  <body class="" pagebase="fullscale" >
+    </head>
+  <body>
 
-  
+    <!-- Path to Framework7 Library JS-->
+    
     
     <script data-main="app-source/app" src="bower_components/requirejs/require.js"></script>
-	 <script type="text/javascript">
+	<script type="text/javascript">
 		require.config({
 			baseUrl : 'app-source'
 		})
-		
-		
+		defaultPage = 'adminstart';	
 	</script>
   </body>
 </html>
