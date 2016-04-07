@@ -1,20 +1,7 @@
 
 css/main.css
 ----------------
-css/../resources/symbolset/ss-standard.css
 css/main.css
-
-resources/symbolset/ss-social.css
-----------------
-resources/symbolset/ss-social.css
-
-resources/symbolset/ss-standard.css
-----------------
-resources/symbolset/ss-standard.css
-
-resources/symbolset/ss-symbolicons-block.css
-----------------
-resources/symbolset/ss-symbolicons-block.css
 
 app.js
 ----------------
@@ -68,6 +55,7 @@ resources/canjs-commons/extensions.js
 /Users/perehnbom/git/soundstories/public/bower_components/canjs/amd/can/map/backup.js
 /Users/perehnbom/git/soundstories/public/bower_components/canjs/amd/can/map/define.js
 /Users/perehnbom/git/soundstories/public/bower_components/canjs/amd/can/map/validations.js
+/Users/perehnbom/git/soundstories/public/bower_components/framework7/dist/js/framework7.js
 /Users/perehnbom/git/soundstories/public/bower_components/sugar/release/sugar-full.development.js
 mtemplate!canjsfm7-plugin/pagebase.mustache
 mtemplate!canjsfm7-plugin/pagenavbar.mustache

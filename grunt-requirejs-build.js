@@ -15,7 +15,7 @@ module.exports = {
        
       ],
       exclude: [
-           "framework7"
+           
       ]
     }
     

@@ -12,10 +12,10 @@ var oldversionhtml =
 			    '<meta charset="utf-8">\n'+
 			    '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">\n'+
 			    '<meta name="apple-mobile-web-app-capable" content="yes">\n'+
-				'<title>Agiloo</title>\n'+
+				'<title>Sound Stories</title>\n'+
 			    '<link href="css/main.css" media="all" rel="stylesheet" type="text/css" />\n'+
 			    '<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">\n'+			    
-			    '<link rel="stylesheet" type="text/css" href="css/icons/icomoon/style.css">\n'+
+			    
 			    '</head>\n'+
 			  '<body class="" pagebase="fullscale">\n'+
 				'<div class="versionmessage">The browser version is not supported</div>\n'+	
@@ -32,14 +32,15 @@ function render(data){
 		    '<meta charset="utf-8">\n'+
 		    '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">\n'+
 		    '<meta name="apple-mobile-web-app-capable" content="yes">\n'+
-			'<title>Agiloo</title>\n'+
+			'<title>Sound Stories</title>\n'+
 		    '<link href="css/main.css?v='+data.version+'" media="all" rel="stylesheet" type="text/css" />\n'+
 		    '<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">\n'+			    
-		    '<link rel="stylesheet" type="text/css" href="css/icons/icomoon/style.css">\n'+
+
+			'<link rel="stylesheet" type="text/css" href="resources/symbolset/ss-standard.css">\n'+
 		    '</head>\n'+
 		  '<body class="" pagebase="fullscale">\n'+
 			'<script data-main="dist/app" src="require.js"></script>\n'+
-			'<script src="framework7.min.js?v='+data.version+'"></script>\n'+
+		
 			'<script type="text/javascript">\n'+
 				'require.config({\n'+
 					'baseUrl : "dist",\n'+
